@@ -5,6 +5,8 @@ sudo apt-get update -y
 sudo apt-get update -y
 
 sudo apt-get install -y build-essential software-properties-common python-software-properties curl git-core libxml2-dev libxslt1-dev libfreetype6-dev python-pip python-apt python-dev
+sudo pip install --upgrade pip
+sudo pip install --upgrade virtualenv
 
 cd /var/tmp
 git clone -b release https://github.com/pedrorib/configuration
