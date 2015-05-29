@@ -1,6 +1,16 @@
 
 echo "São necessárias permissões de root para correr este script"
 
+if [[ ! "$(lsb_release -d | cut -f2)" =~ $'Ubuntu 14.04.4 LTS' ]]; then
+   echo "Este script funciona apenas em UBUNTU 14.04.4 LTS."
+   echo "Quer prosseguir mesmo assim? (S=SIM / Outra tecla para sair)"
+   read conf;
+   if ["$conf"="S"]; then;
+    else
+    echo "ABORTADO"
+    exit;
+   fi
+fi
 sudo apt-get update -y
 sudo apt-get update -y
 
