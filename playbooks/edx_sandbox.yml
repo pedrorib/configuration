@@ -6,7 +6,7 @@
 
 - name: Configure instance(s)
   hosts: all
-  sudo: True
+  sudo: yes
   gather_facts: True
   vars:
     migrate_db: "yes"
