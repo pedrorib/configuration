@@ -18,7 +18,7 @@ echo "Quer prosseguir com a instalação?"
 echo "(S para sim, outra tecla para abortar)"
 read test
 
-if [[!"$test"="S"]];then
+if [["$test"!="S"]];then
 echo "ABORTADO";
 fi
 
