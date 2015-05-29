@@ -16,9 +16,9 @@ echo "ATENÇÃO"
 echo "O COMPUTADOR REINICIARÁ QUANDO ACABAR A INSTALAÇÃO"
 echo "Quer prosseguir com a instalação?"
 echo "(S para sim, outra tecla para abortar)"
-read test
+read teste
 
-if [["$test"!="S"]];then
+if [["$teste"!="S"]];then
 echo "ABORTADO";
 fi
 
