@@ -30,7 +30,7 @@ sudo pip install --upgrade pip
 sudo pip install --upgrade virtualenv
 
 cd /var/tmp
-git clone -b release https://github.com/pedrorib/configuration
+git clone -b birch https://github.com/pedrorib/configuration
 
 
 cd /var/tmp/configuration
