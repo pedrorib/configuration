@@ -30,6 +30,8 @@ sudo pip install --upgrade virtualenv
 cd /var/tmp
 git clone -b named-release/birch https://github.com/edx/configuration
 
+sleep 10
+
 sed -i "/libblas/ s/^/#/g" /var/tmp/configuration/playbooks/roles/edxapp/tasks/python_sandbox_env.yml
 sed -i "/liblapack/ s/^/#/g" /var/tmp/configuration/playbooks/roles/edxapp/tasks/python_sandbox_env.yml
 
