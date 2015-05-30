@@ -17,9 +17,9 @@ echo "Quer prosseguir com a instalação?"
 echo "Já fez upgrade e update?"
 sleep 3
 echo "(S para sim, outra tecla para abortar)"
-read test
+read teste
 
-if [[ "$test" != "S" ]]; then
+if [[ "$teste" != "S" ]]; then
 echo "ABORTADO";
 fi
 
