@@ -1,8 +1,6 @@
 
-echo "São necessárias permissões de root para correr este script"
-
-if [[ ! "$(lsb_release -d | cut -f2)" =~ $'Ubuntu 14.04.4 LTS' ]]; then
-   echo "Este script funciona apenas em UBUNTU 14.04.4 LTS."
+if [[ ! "$(lsb_release -d | cut -f2)" =~ $'Ubuntu 14.04.2 LTS' ]]; then
+   echo "Este script funciona apenas em UBUNTU 14.04.2 LTS."
    echo "Quer prosseguir mesmo assim? (S=SIM / Outra tecla para sair)"
    read conf;
    if [[ "$conf" != "S" ]]; then
@@ -11,9 +9,6 @@ if [[ ! "$(lsb_release -d | cut -f2)" =~ $'Ubuntu 14.04.4 LTS' ]]; then
    fi
 fi
 
-echo "ATENÇÃO"
-echo "O COMPUTADOR REINICIARÁ QUANDO ACABAR A INSTALAÇÃO"
-echo "Quer prosseguir com a instalação?"
 echo "Já fez upgrade e update?"
 sleep 3
 echo "(S para sim, outra tecla para abortar)"
@@ -22,6 +17,8 @@ read teste
 if [[ "$teste" != "S" ]]; then
 echo "ABORTADO";
 fi
+
+echo "São necessárias permissões de root para correr este script"
 
 sudo apt-get install -y build-essential software-properties-common python-software-properties curl git-core libxml2-dev libxslt1-dev libfreetype6-dev python-pip python-apt python-dev
 sudo pip install --upgrade pip
